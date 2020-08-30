@@ -1,4 +1,5 @@
 # Zujo-set-2-WebApp
+[![forthebadge made-with-python](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://www.python.org/)
 ```
 Description:
 Recruitment task by ZUJO company
