@@ -37,21 +37,36 @@ containers.
 
 # Homepage
 ```
-
+In Homepage of webapp, we will see a form to upload a CSV file to dump its data into Database.
 ```
 ![alt text](https://i.ibb.co/BgkXFLp/Screenshot-360.png)
 
 # Uploading the .csv file on webapp
+```
+We can upload .csv file either by selection or drag and drop.
+```
 ![alt text](https://i.ibb.co/NLMBJYx/Screenshot-359.png)
 
 # Validation before dumping the data 
+```
+It perform validation on data and only insert valid data into Database and discard invalid records of data.
+```
 ![alt text](https://i.ibb.co/YcgwNWd/Screenshot-358.png" )
 
 # Displaying Data
+```
+It display data in form of a table
+```
 ![alt text](https://i.ibb.co/tcZd0dY/Screenshot-357.png)
 
 # Groupby Username:
+```
+We can perform Groupby operation on username, It'll display data grouped by username(Apply all necessary rowspanning in table)
+```
 ![alt text](https://i.ibb.co/zRZK4Ny/Screenshot-356.png)
 
 # Groupby Year from Date:
+```
+We can perform Groupby operation on Year of date, It'll display data grouped by Date(Apply all necessary rowspanning in table)
+```
 ![alt text](https://i.ibb.co/bFvV2Br/Screenshot-355.png)
