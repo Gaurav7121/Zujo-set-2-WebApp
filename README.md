@@ -45,7 +45,7 @@ In Homepage of webapp, we will see a form to upload a CSV file to dump its data 
 ```
 We can upload .csv file either by selection or drag and drop.
 ```
-![alt text](https://i.ibb.co/NLMBJYx/Screenshot-359.png)
+![alt text](https://i.ibb.co/GF41GrY/Screenshot-361.png)
 
 # Validation before dumping the data 
 ```
