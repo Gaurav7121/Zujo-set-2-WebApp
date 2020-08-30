@@ -27,8 +27,12 @@ containers.
 => Be as genuine as possible.
 => Hosting it on any free hosting platform would be appreciated.
 ```
+# Technology Used
+[![Generic badge](https://img.shields.io/badge/JS-NodeJS-<COLOR>.svg)](https://shields.io/)<br>
+[![Generic badge](https://img.shields.io/badge/DB-MongoDB-<COLOR>.svg)](https://shields.io/)<br>
+[![Generic badge](https://img.shields.io/badge/HTML-CSS-<COLOR>.svg)](https://shields.io/)
 
-#How to Run WebApp using Node Server
+# How to Run WebApp using Node Server
 ```
 1) First Download the code and navigate to the directory where the code is downloaded.
 2) Open Git Bash and use either node or nodemon to run this web app.
