@@ -1,0 +1,56 @@
+<!-- Using Common Header and Footer files to keep same track and same csv files-->
+<%- include("header") -%>
+
+<!-- A Complete form to recieve .csv file as input  -->
+<form action="/" method='post' enctype="multipart/form-data">
+  <!--  General Division for form -->
+  <div class="form-group">
+    <!-- Top Heading of the form -->
+    <h2 class="heading full"> Form </h2>
+    <!-- Section which will accept .csv file as input-->
+    <div class="">
+      <input name='csvfile' class='file' id='csvname' type="file" accept='.csv' />
+      <!-- paragraph to display the name of a file -->
+      <p id='filename'></p>
+    </div>
+
+    <div class="controls full">
+      <button class="full" type='submit'>Upload</button>
+      <br>
+      <div class="">
+        <!-- To display error(red) and response(green) in prompt recieved from server -->
+        <p style='margin-top:10px;'>Prompt :</p>
+        <p style='color:red;font-size:18px;align:center'><%= error %></p>
+        <p style='color:green;font-size:18px;'><%= response %></p>
+      </div>
+    </div>
+  </div>
+  </form>
+
+<!-- button to display data from DB in table -->
+<form action="/display" method="get">
+  <div class="controls full">
+    <button class="full" type='submit'>View Data</button>
+  </div>
+</form>
+
+  <script type="text/javascript">
+    var input = document.getElementById( 'csvname' );
+    var infoArea = document.getElementById( 'filename' );
+
+    input.addEventListener( 'change', showFileName );
+
+    function showFileName( event ) {
+
+      // it gives us the input that occurred
+      var input = event.srcElement;
+
+      // In the input array of files in the each one has a name of its own which we are using.
+      var fileName = input.files[0].name;
+
+      // use fileName to display it on the page
+      infoArea.textContent = 'File name: ' + fileName;
+    }
+  </script>
+
+<%- include("footer") -%>

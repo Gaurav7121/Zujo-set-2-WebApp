@@ -1,0 +1,46 @@
+<!-- Using Common Header and Footer files to keep same track and same csv files-->
+<%- include("header") -%>
+
+<!-- division which contains options to perform groupby by user and year from date -->
+<div class="centerbox">
+  <form method="get">
+    <!-- performing groupby operation for username by using dynamic pparameter in route -->
+    <div class="controls half">
+      <button class="full" type='submit' formmethod="get" formaction="/groupby/username">Group by User</button>
+    </div>
+    <!-- performing groupby operation for Year by using dynamic pparameter in route -->
+    <div class="controls half">
+      <button class="full" type='submit' formmethod="get" formaction="/groupby/year">Group by year</button>
+    </div>
+  </form>
+
+</div>
+
+<div class="centerbox">
+  <!-- creating table if DB is not empty -->
+  <% if(users.length!=0) { %>
+  <table class='centerbox'>
+  <tr>
+      <th>Username</th>
+      <th>Amount</th>
+      <th>Date</th>
+
+  </tr>
+  <!-- using for loop for creating rows of table -->
+  <% users.forEach(function(item){ %>
+  <tr>
+      <td><%= item.username%></td>
+      <td><%= item.amount %></td>
+      <td><%= item.year +'-'+ item.month +'-'+ item.day %></td>
+  </tr>
+  <% }) %>
+  </table>
+  <% } else { %>
+    <!-- returning Error if DB is empty -->
+      <p>
+        [Empty Database] No Record Found..!!
+        </p>
+  <% }%>
+</div>
+
+<%- include("footer") -%>
