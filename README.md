@@ -32,11 +32,13 @@ containers.
 3. Hosting it on any free hosting platform would be appreciated.
 ```
 # Technology Used
+
 [![Generic badge](https://img.shields.io/badge/JS-NodeJS-<COLOR>.svg)](https://shields.io/)<br>
 [![Generic badge](https://img.shields.io/badge/DB-MongoDB-<COLOR>.svg)](https://shields.io/)<br>
 [![Generic badge](https://img.shields.io/badge/HTML-CSS-<COLOR>.svg)](https://shields.io/)
 
 # How to Run WebApp using Node Server
+
 ```
 1. First Download the code and navigate to the directory where the code is downloaded.
 2. Open Git Bash and use either node or nodemon to run this web app.
@@ -44,36 +46,42 @@ containers.
 ```
 
 # Homepage
+
 ```
 In Homepage of Web App, we will see a form to upload a CSV file to dump its data into Database.
 ```
 ![alt text](https://i.ibb.co/BgkXFLp/Screenshot-360.png)
 
 # Uploading the .csv file on Web App
+
 ```
 We can upload .csv file either by selection or drag and drop.
 ```
 ![alt text](https://i.ibb.co/GF41GrY/Screenshot-361.png)
 
 # Validation before dumping the data 
+
 ```
 It perform validation on data and only insert valid data into Database and discard invalid records of data.
 ```
 ![alt text](https://i.ibb.co/YcgwNWd/Screenshot-358.png" )
 
 # Displaying Data
+
 ```
 It display data in form of a table
 ```
 ![alt text](https://i.ibb.co/tcZd0dY/Screenshot-357.png)
 
 # Group by Username:
+
 ```
 We can perform Groupby operation on username, It'll display data grouped by username (Apply all necessary rowspanning in table)
 ```
 ![alt text](https://i.ibb.co/zRZK4Ny/Screenshot-356.png)
 
 # Group by Year from Date:
+
 ```
 We can perform Groupby operation on Year of date, It'll display data grouped by Date (Apply all necessary rowspanning in table)
 ```
